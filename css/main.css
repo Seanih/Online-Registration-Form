@@ -1,7 +1,8 @@
 /* ------- BASE STYLES -------- */
-
-body {
+* {
     box-sizing: border-box;
+}
+body {
     font-family: 'Fira Sans Condensed', sans-serif;
     min-width: 320px;
 }
@@ -27,7 +28,7 @@ header p {
 }
 
 .borderDiv {
-    height: 7px;
+    height: 15px;
     width: 90%;
     border-top: 6px solid black;
     border-bottom: 2px solid black;
@@ -37,9 +38,17 @@ header p {
 
 
 form {
+    width: 100%;
+}
+
+fieldset {
+    border: none;
     display: flex;
     flex-direction: column;
-    width: 95%;
+    padding: 0;
+    margin: auto;
+    width: 90%;
+    border-bottom: 3px solid black;
 }
 
 label {
@@ -65,20 +74,15 @@ input[placeholder],
 input[type="tel"] {
     font-weight: lighter;
     font-size: .9em;
-    padding: 8px 0;  
+    padding: .5em 1em;  
 }
 
-fieldset {
-    border: none;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 100%;
-}
+
   
 legend {
     font-size: 1.4em;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 #zip {
