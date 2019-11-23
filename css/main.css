@@ -34,11 +34,12 @@ header p {
     margin: 30px auto;
 }
 
+
+
 form {
     display: flex;
     flex-direction: column;
     width: 90%;
-    margin: auto;
 }
 
 label {
@@ -48,6 +49,43 @@ label {
     color: gray;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+#state {
+  height: 3em;  
+  background-color: #e8eeef;
+  color: #8a97a0;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+input[placeholder],
+input[type="tel"] {
+    font-weight: lighter;
+    font-size: .9em;
+    padding: 8px 0;
+    text-align: right;
+    padding-right: 15px;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+}
+  
+legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+#zip {
+    width: 50%;
+}
 
 
 
