@@ -58,6 +58,10 @@ label {
     color: gray;
 }
 
+input {
+    border-radius: 6px;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -71,13 +75,15 @@ input[type="number"],
 }
 
 input[placeholder],
-input[type="tel"] {
+input[type="te"] {
     font-weight: lighter;
     font-size: .9em;
     padding: .5em 1em;  
 }
 
-
+input[placeholder="Required"] {
+    text-align: right;
+}
   
 legend {
     font-size: 1.4em;
