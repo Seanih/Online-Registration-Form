@@ -5,6 +5,7 @@
 body {
     font-family: 'Fira Sans Condensed', sans-serif;
     min-width: 320px;
+    margin: 0;
 }
 
 header {
@@ -41,13 +42,15 @@ form {
     width: 100%;
 }
 
-fieldset {
+.fieldset-1 {
     border: none;
     display: flex;
-    flex-direction: column;
     padding: 0;
     margin: auto;
     width: 90%;
+}
+
+fieldset:first-of-type {
     border-bottom: 3px solid black;
 }
 
@@ -75,7 +78,7 @@ input[type="number"],
 }
 
 input[placeholder],
-input[type="te"] {
+input[type="tel"] {
     font-weight: lighter;
     font-size: .9em;
     padding: .5em 1em;  
@@ -87,13 +90,20 @@ input[placeholder="Required"] {
   
 legend {
     font-size: 1.4em;
-    margin-bottom: 10px;
     font-weight: bold;
 }
 
 #zip {
     width: 50%;
 }
+
+.fieldset-2 {
+    margin: 1.5em auto 0;
+    width: 90%;
+    border: none;
+}
+
+
 
 
 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Online Registration Form</title>
-    <link rel="stylesheet" href="css/reset-styles.css">
+    <link rel="stylesheet" href="css/reset-styles.cs">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -20,8 +20,8 @@
     </header>
     <main>
         <form action="index.html" method="POST">                        
-            <div>
-                <fieldset>
+
+                <fieldset class="fieldset-1">
                     <legend>Contact Information</legend>
                     
                     <label for="name">Full Name</label>
@@ -51,8 +51,23 @@
                     
                     <label for="zip">Zip Code</label>
                     <input type="number" id="zip" name="user_zip" placeholder="53216">
-                </fieldset>       
-            </div>
+                </fieldset>                  
+                <fieldset class="fieldset-2">
+                    <legend>Newsletter</legend>
+                
+                    <label>Select the newsletters you would like to receive</label><br>
+                    <input type="checkbox" name="html_news" value="html_news">HTML News<br>
+                    <input type="checkbox" name="css_news" value="css_news">CSS News<br>
+                    <input type="checkbox" name="js_news" value="js_news">Javascript News<br>
+                
+                    <label>Newsletter format</label>
+                    
+                    <input type="radio" id="html_format" value="html_format" name="html_letter"> 
+                    <label for="html_format">HTML</label>
+                    <input type="radio" id="html_format" value="html_format" name="plain_letter"> 
+                    <label for="html_format">Plain Text</label>
+                </fieldset>
+
         </form>
     </main>
 </body>
