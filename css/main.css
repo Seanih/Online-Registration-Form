@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Fira Sans Condensed', sans-serif;
     min-width: 320px;
@@ -35,8 +36,6 @@ header p {
     border-bottom: 2px solid black;
     margin: 30px auto;
 }
-
-
 
 form {
     width: 100%;
@@ -196,4 +195,11 @@ fieldset p {
 }
 
 
+/* ************* MEDIA QUERIES *************** */
+
+@media (min-width: 768px) {
+    h2:nth-child(even) {
+        padding-top: 2em;
+    }
+}
 
