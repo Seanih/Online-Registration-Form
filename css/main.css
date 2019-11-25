@@ -207,6 +207,15 @@ fieldset p {
             max-width: 950px;
             margin: 0 auto;
         }
-    
+
+        .fieldset-1 {
+            display: block;
+        }
+
+        .fieldset-1 input, 
+        #state {
+            width: 70%;
+            margin-right: auto;
+        }
 }
 
