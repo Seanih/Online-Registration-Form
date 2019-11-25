@@ -43,7 +43,7 @@ form {
 
 .fieldset-1 {
     border: none;
-    display: flex;
+    display: flex;      
     padding: 0;
     margin: auto;
     width: 90%;
@@ -201,5 +201,12 @@ fieldset p {
     h2:nth-child(even) {
         padding-top: 2em;
     }
+
+        #container {
+            width: 80%;
+            max-width: 950px;
+            margin: 0 auto;
+        }
+    
 }
 
