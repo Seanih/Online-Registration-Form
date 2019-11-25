@@ -22,6 +22,7 @@
         <form action="index.html" method="POST">                        
 
                 <fieldset class="fieldset-1">
+                    
                     <legend>Contact Information</legend>
                     
                     <label for="name">Full Name</label>
@@ -51,21 +52,31 @@
                     
                     <label for="zip">Zip Code</label>
                     <input type="number" id="zip" name="user_zip" placeholder="53216">
+                
                 </fieldset>                  
+                
                 <fieldset class="fieldset-2">
-                    <legend>Newsletter</legend>
+                    
+                    <legend class="legend-2">Newsletter</legend>
                 
                     <label>Select the newsletters you would like to receive</label><br>
-                    <input type="checkbox" name="html_news" value="html_news">HTML News<br>
-                    <input type="checkbox" name="css_news" value="css_news">CSS News<br>
-                    <input type="checkbox" name="js_news" value="js_news">Javascript News<br>
+                    <input type="checkbox" name="html_news" value="html_news"><span class="grey">HTML News</span><br>
+                    <input type="checkbox" name="css_news" value="css_news"><span class="grey">CSS News</span><br>
+                    <input type="checkbox" name="js_news" value="js_news"><span class="grey">Javascript News</span><br>
                 
-                    <label>Newsletter format</label>
-                    
-                    <input type="radio" id="html_format" value="html_format" name="html_letter"> 
-                    <label for="html_format">HTML</label>
-                    <input type="radio" id="html_format" value="html_format" name="plain_letter"> 
+                    <label>Newsletter format</label><br>                
+                    <input type="radio" value="html_format" name="html_letter"> 
+                    <label for="html_format">HTML</label><br>
+                    <input type="radio" value="html_format" name="plain_letter"> 
                     <label for="html_format">Plain Text</label>
+
+                    <div class="text-area">
+                        <label for="user_topics">Other topics you'd like to hear about</label><br>
+                        <textarea id="topics" name="user_topics"></textarea>
+
+                        <button type="submit">Sign Up</button>
+                        
+                    </div>
                 </fieldset>
 
         </form>

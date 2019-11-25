@@ -56,7 +56,7 @@ fieldset:first-of-type {
 
 label {
     margin: 1em 0;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: lighter;
     color: gray;
 }
@@ -98,12 +98,58 @@ legend {
 }
 
 .fieldset-2 {
-    margin: 1.5em auto 0;
+    margin: 1.5em auto;
+    padding: 0;
     width: 90%;
+    border: none;
+    text-align: left;
+}
+
+.legend-2 {
+    margin-bottom: .5em;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+input[name="html_news"],
+input[name="html_letter"] {
+    margin-top: 2em;
+}
+
+.grey {
+    font-size: 1.2em;
+    color: gray;
+    font-weight: 200;
+}
+
+.text-area {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
     border: none;
 }
 
+#topics {
+    width: 100%;
+    height: 140px;
+    margin-top: 1.2em;
+    border-radius: 6px;
+    background-color: #e8eeef
+}
 
+button {
+    width: 100%;
+    margin: 2em 0;
+    height: 70px;
+    border-radius: 6px;
+    background-color: rgb(26, 180, 155);
+    font-size: 1.4em;
+    font-weight: bold;
+    color: white;
+}
 
 
 
