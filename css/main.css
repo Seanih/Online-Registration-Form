@@ -228,6 +228,10 @@ fieldset p {
             margin-top: 1em;
             margin-bottom: 1em;
             float: right;
-        } 
+        }
+        
+        .fieldset-1 br {
+            display: block;
+        }
 }
 
