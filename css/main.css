@@ -49,6 +49,10 @@ form {
     width: 90%;
 }
 
+br {
+    display: none;
+}
+
 fieldset:first-of-type {
     border-bottom: 3px solid black;
 }
@@ -100,7 +104,6 @@ input[type="number"],
   height: 3em;  
   background-color: #e8eeef;
   color: #8a97a0;
-  margin-bottom: 30px;
   width: 100%;
 }
 
@@ -122,6 +125,7 @@ legend {
 
 #zip {
     width: 50%;
+    margin-bottom: 3em;
 }
 
 .fieldset-2 {
@@ -217,5 +221,18 @@ fieldset p {
             width: 70%;
             margin-right: auto;
         }
+
+        .fieldset-1 input,
+        .fieldset-1 select {
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        br {
+            display: block;
+        }
+
+
+          
 }
 
