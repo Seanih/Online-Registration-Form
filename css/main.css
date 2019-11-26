@@ -49,7 +49,7 @@ form {
     width: 90%;
 }
 
-br {
+.fieldset-1 br {
     display: none;
 }
 
@@ -216,6 +216,7 @@ fieldset p {
             display: block;
         }
 
+
         .fieldset-1 input, 
         #state {
             width: 70%;
@@ -226,13 +227,7 @@ fieldset p {
         .fieldset-1 select {
             margin-top: 1em;
             margin-bottom: 1em;
-        }
-
-        br {
-            display: block;
-        }
-
-
-          
+            float: right;
+        } 
 }
 
