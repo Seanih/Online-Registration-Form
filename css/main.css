@@ -191,6 +191,12 @@ input[value="html_letter"] {
     background-color: #e8eeef
 }
 
+.button-div {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
 button {
     width: 100%;
     margin: 1em 0;
@@ -202,18 +208,16 @@ button {
     color: white;
 }
 
+.button-div p {
+    font-weight: 200;
+    color: gray;
+    font-style: italic;
+}
+
 button:hover {
     cursor: pointer;
     opacity: .9;
 }
-
-fieldset p {
-    text-align: center;
-    color: gray;
-    font-weight: 200;
-    font-style: italic;
-}
-
 
 /* ************* MEDIA QUERIES *************** */
 
