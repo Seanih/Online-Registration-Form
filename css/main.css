@@ -44,13 +44,29 @@ form {
 .fieldset-1 {
     border: none;
     display: flex;      
-    padding: 0;
+    padding: 1.5em 0;
     margin: auto;
     width: 90%;
 }
 
+.flex-row,
+.flex-row-zip {
+    height: 90px;
+    margin-bottom: 1em;
+}
+
+.flex-row input,
+.flex-row-zip input,
+select {
+    margin: 1em 0;
+}
+
 .fieldset-1 br {
     display: none;
+}
+
+.fieldset-1 br:last-of-type {
+    display: block;
 }
 
 fieldset:first-of-type {
@@ -58,7 +74,6 @@ fieldset:first-of-type {
 }
 
 label {
-    margin: 1em 0;
     font-size: 1.2em;
     font-weight: lighter;
     color: gray;
@@ -69,31 +84,33 @@ input {
 }
 
 input[type="text"]:focus {
-    background-color: #ffd7d2; 
+    background-color: #ffd7d2;
+    transition: .3s;
 }
 
 input[type="email"]:focus {
     background-color: #ffd7d2; 
+    transition: .3s;
 }
 
 input[type="tel"]:focus {
     background-color: #ffd7d2; 
-}
-
-input[type="text"]:focus {
-    background-color: #ffd7d2; 
+    transition: .3s;
 }
 
 input[type="number"]:focus {
-    background-color: #ffd7d2; 
+    background-color: #ffd7d2;
+    transition: .3s; 
 }
 
 #state:focus {
     background-color: #ffd7d2; 
+    transition: .3s;
 }
 
 #topics:focus {
-    background-color: #ffd7d2; 
+    background-color: #ffd7d2;
+    transition: .3s; 
 }
 
 input[type="text"],
@@ -125,7 +142,6 @@ legend {
 
 #zip {
     width: 50%;
-    margin-bottom: 3em;
 }
 
 .fieldset-2 {
@@ -202,36 +218,50 @@ fieldset p {
 /* ************* MEDIA QUERIES *************** */
 
 @media (min-width: 768px) {
+    
+    body {
+        background-color: rgb(248, 247, 240);
+    }
+    
     h2:nth-child(even) {
         padding-top: 2em;
     }
 
-        #container {
-            width: 80%;
-            max-width: 950px;
-            margin: 0 auto;
-        }
+    #container {
+        width: 80%;
+        max-width: 950px;
+        margin: 0 auto;
+    }
 
-        .fieldset-1 {
-            display: block;
-        }
+    .fieldset-1 {
+        display: block;
+    }
 
+    .fieldset-1 input, 
+    #state {
+        width: 70%;
+    }
+    
+    .fieldset-1 br {
+        display: inline-block;
+    }
 
-        .fieldset-1 input, 
-        #state {
-            width: 70%;
-            margin-right: auto;
-        }
-
-        .fieldset-1 input,
-        .fieldset-1 select {
-            margin-top: 1em;
-            margin-bottom: 1em;
-            float: right;
-        }
-        
-        .fieldset-1 br {
-            display: block;
-        }
+    .flex-row,
+    .flex-row-zip {
+        display: flex;
+        align-items: center;
+    }
+    
+    .flex-row > input {
+        margin: 0;
+        float: none;
+        flex-basis: 75%;
+    }
+    
+    label {
+        margin: 0;
+        flex-basis: 25%;
+    }
+         
 }
 
